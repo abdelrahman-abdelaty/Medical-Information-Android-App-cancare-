@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">CanCare</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_hospital">Map</string>
+    <string name="app_name1">AlertDialog</string>
+    <string name="dialog_message">Welcome to Alert Dialog</string>
+    <string name="dialog_title">Javatpoint Alert Dialog</string>
+    <string name="awareness">مقالات توعيه</string>
+    <string name="c"><u>فيروس سي و الوقاية منه</u></string>
+    <string name="nafs"><u>الأمراض النفسية وعلاجها</u></string>
+    <string name="child"><u>الأمراض النفسية وعلاجها</u></string>
+    <string name="manaa"><u>أمراض المناعة والوقاية منها</u></string>
+    <string name="vary"><u>أمراض عامة والوقاية منها</u></string>
+    <string name="text_value"><u>حجم الخط</u></string>
+    <string name="large">كبير</string>
+    <string name="medium">متوسط</string>
+    <string name="small">صغير</string>
+
+    <!---->
+</resources>

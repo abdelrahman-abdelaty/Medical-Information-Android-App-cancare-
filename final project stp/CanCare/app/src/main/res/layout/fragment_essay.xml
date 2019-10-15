@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".EssayFragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="مقالات عن التوعية الصحية و البيئية"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="32sp" />
+
+        <TextView
+            android:id="@+id/tt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الامراض المعدية Infectious disease"
+            android:textColor="@color/red"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/disease"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أعراض الامراض المعدية"
+            android:textColor="@color/red"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/aarad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أسباب وعوامل خطر الامراض المعدية"
+            android:textColor="@color/red"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/cause"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="مضاعفات الامراض المعدية"
+            android:textColor="@color/red"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/mult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تشخيص الامراض المعدية"
+            android:textColor="@color/red"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/tash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="علاج الامراض المعدية"
+            android:textColor="@color/red"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/cure"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الوقاية من الامراض المعدية"
+            android:textColor="@color/red"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/prot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="النظافة العامة"
+            android:textColor="@color/red"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/san"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="النظافة الشخصية"
+            android:textColor="@color/red"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/hyg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="أهمية النظافة الشخصية"
+            android:textColor="@color/red"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/hyg_im"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="كيفية الحفاظ على النظافة الشخصية"
+            android:textColor="@color/red"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/hyg_how"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="نظرة الاسلام للنظافة"
+            android:textColor="@color/red"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/islam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="الأمراض المزمنة والوقاية منها"
+            android:textColor="@color/red"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/dis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="بعض الأمراض المزمنة"
+            android:textColor="@color/red"
+            android:textSize="27sp" />
+
+        <TextView
+            android:id="@+id/some_dis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/child"
+            android:textColor="@color/blue"
+            android:textSize="27sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/manaa"
+            android:textColor="@color/blue"
+            android:textSize="27sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt17"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nafs"
+            android:textColor="@color/blue"
+            android:textSize="27sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/tt18"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="@string/c"
+            android:textSize="27sp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+        <TextView
+            android:id="@+id/tt19"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="@string/vary"
+            android:textSize="27sp"
+
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="17sp" />
+
+
+    </LinearLayout>
+</ScrollView>

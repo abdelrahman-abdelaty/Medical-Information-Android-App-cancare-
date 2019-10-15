@@ -1,0 +1,1265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        >
+
+        <Button
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:id="@+id/btt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:text="ترجمه النتائج"
+            android:textSize="30sp" />
+
+        <Button
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginLeft="57dp"
+            android:id="@+id/bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-black"
+            android:onClick="click"
+            android:text="اظهر النتائج"
+            android:textSize="30sp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <ProgressBar
+        android:id="@+id/pp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+
+
+        />
+
+
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="ادخل بياناتك الاساسيه من فضلك....."
+
+        android:textSize="20sp"/>
+
+    <EditText
+        android:id="@+id/ed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginRight="8dp"
+        android:hint="النوع         "
+        android:inputType="text"
+        android:digits="ا ة أ ى ؤ ء ئ ب ت ث ج ح خ د ذ ر ز س ش ص ض ط ظ ع غ ف ق ك ل م ن هـ وي"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/edd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginRight="8dp"
+        android:hint="السن         "
+        android:inputType="number"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvv"
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="sans-serif-black"
+        android:text="اختر اعراضك من فضلك ، وانظر النتائج في الاسفل....."
+        android:textSize="20sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp">
+
+            <CheckBox
+                android:id="@+id/cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <CheckBox
+                android:id="@+id/cb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb" />
+
+            <CheckBox
+                android:id="@+id/cb2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb1" />
+
+            <CheckBox
+                android:id="@+id/cb3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb2" />
+
+            <CheckBox
+                android:id="@+id/cb4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb3" />
+
+            <CheckBox
+                android:id="@+id/cb5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb4" />
+
+            <CheckBox
+                android:id="@+id/cb6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb5" />
+
+            <CheckBox
+                android:id="@+id/cb7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb6" />
+
+            <CheckBox
+                android:id="@+id/cb8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb7" />
+
+            <CheckBox
+                android:id="@+id/cb9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb8" />
+
+            <CheckBox
+                android:id="@+id/cb10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb9" />
+
+            <CheckBox
+                android:id="@+id/cb11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb10" />
+
+            <CheckBox
+                android:id="@+id/cb12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb11" />
+
+            <CheckBox
+                android:id="@+id/cb13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb12" />
+
+            <CheckBox
+                android:id="@+id/cb14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb13" />
+
+            <CheckBox
+                android:id="@+id/cb15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb14" />
+
+            <CheckBox
+                android:id="@+id/cb16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb15" />
+
+            <CheckBox
+                android:id="@+id/cb17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb16" />
+
+            <CheckBox
+                android:id="@+id/cb18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb17" />
+
+            <CheckBox
+                android:id="@+id/cb19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb18" />
+
+            <CheckBox
+                android:id="@+id/cb20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb19" />
+
+            <CheckBox
+                android:id="@+id/cb21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb20" />
+
+            <CheckBox
+                android:id="@+id/cb22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb21" />
+
+            <CheckBox
+                android:id="@+id/cb23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb22" />
+
+            <CheckBox
+                android:id="@+id/cb24"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb23" />
+
+            <CheckBox
+                android:id="@+id/cb25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb24" />
+
+            <CheckBox
+                android:id="@+id/cb26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb25" />
+
+            <CheckBox
+                android:id="@+id/cb27"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb26" />
+
+            <CheckBox
+                android:id="@+id/cb28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb27" />
+
+            <CheckBox
+                android:id="@+id/cb29"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb28" />
+
+            <CheckBox
+                android:id="@+id/cb30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb29" />
+
+            <CheckBox
+                android:id="@+id/cb31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb30" />
+
+            <CheckBox
+                android:id="@+id/cb32"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb31" />
+
+            <CheckBox
+                android:id="@+id/cb33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb32" />
+
+            <CheckBox
+                android:id="@+id/cb34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb33" />
+
+            <CheckBox
+                android:id="@+id/cb35"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb34" />
+
+            <CheckBox
+                android:id="@+id/cb36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb35" />
+
+            <CheckBox
+                android:id="@+id/cb37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb36" />
+
+            <CheckBox
+                android:id="@+id/cb38"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb37" />
+
+            <CheckBox
+                android:id="@+id/cb39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb38" />
+
+            <CheckBox
+                android:id="@+id/cb40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb39" />
+
+            <CheckBox
+                android:id="@+id/cb41"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb40" />
+
+            <CheckBox
+                android:id="@+id/cb42"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb41" />
+
+            <CheckBox
+                android:id="@+id/cb43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb42" />
+
+            <CheckBox
+                android:id="@+id/cb44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb43" />
+
+            <CheckBox
+                android:id="@+id/cb45"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb44" />
+
+            <CheckBox
+                android:id="@+id/cb46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb45" />
+
+            <CheckBox
+                android:id="@+id/cb47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb46" />
+
+            <CheckBox
+                android:id="@+id/cb48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb47" />
+
+            <CheckBox
+                android:id="@+id/cb49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb48" />
+
+            <CheckBox
+                android:id="@+id/cb50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb49" />
+
+            <CheckBox
+                android:id="@+id/cb51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb50" />
+
+            <CheckBox
+                android:id="@+id/cb52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb51" />
+
+            <CheckBox
+                android:id="@+id/cb53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb52" />
+
+            <CheckBox
+                android:id="@+id/cb54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb53" />
+
+            <CheckBox
+                android:id="@+id/cb55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb54" />
+
+            <CheckBox
+                android:id="@+id/cb56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb55" />
+
+            <CheckBox
+                android:id="@+id/cb57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb56" />
+
+            <CheckBox
+                android:id="@+id/cb58"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb57" />
+
+            <CheckBox
+                android:id="@+id/cb59"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb58" />
+
+            <CheckBox
+                android:id="@+id/cb60"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb59" />
+
+            <CheckBox
+                android:id="@+id/cb61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb60" />
+
+            <CheckBox
+                android:id="@+id/cb62"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb61" />
+
+            <CheckBox
+                android:id="@+id/cb63"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb62" />
+
+            <CheckBox
+                android:id="@+id/cb64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb63" />
+
+            <CheckBox
+                android:id="@+id/cb65"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb64" />
+
+            <CheckBox
+                android:id="@+id/cb66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb65" />
+
+            <CheckBox
+                android:id="@+id/cb67"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb66" />
+
+            <CheckBox
+                android:id="@+id/cb68"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb67" />
+
+            <CheckBox
+                android:id="@+id/cb69"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb68" />
+
+            <CheckBox
+                android:id="@+id/cb70"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/cb69" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام في البطن ، بعد الأكل"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb1"
+                app:layout_constraintEnd_toStartOf="@id/cb1"
+                app:layout_constraintTop_toTopOf="@id/cb1" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام في البطن ، تتفاقم على معدة فارغة"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb2"
+                app:layout_constraintEnd_toStartOf="@id/cb2"
+                app:layout_constraintTop_toTopOf="@id/cb2" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ألم في البطن ، يتفاقم أثناء السعال أو الحركة"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb3"
+                app:layout_constraintEnd_toStartOf="@id/cb3"
+                app:layout_constraintTop_toTopOf="@id/cb3" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ألم في البطن ، يتفاقم أثناء التنفس العميق"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb4"
+                app:layout_constraintEnd_toStartOf="@id/cb4"
+                app:layout_constraintTop_toTopOf="@id/cb4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام في البطن"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb"
+                app:layout_constraintEnd_toStartOf="@id/cb"
+                app:layout_constraintTop_toTopOf="@id/cb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام في البطن ، مغص"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb5"
+                app:layout_constraintEnd_toStartOf="@id/cb5"
+                app:layout_constraintTop_toTopOf="@id/cb5" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام الظهر ، تتفاقم بسبب المجهود البدني"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb6"
+                app:layout_constraintEnd_toStartOf="@id/cb6"
+                app:layout_constraintTop_toTopOf="@id/cb6" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام الظهر ، تتحسن مع الراحة"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb7"
+                app:layout_constraintEnd_toStartOf="@id/cb7"
+                app:layout_constraintTop_toTopOf="@id/cb7" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام الظهر ، أسفل الظهر"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb8"
+                app:layout_constraintEnd_toStartOf="@id/cb8"
+                app:layout_constraintTop_toTopOf="@id/cb8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام الظهر ، أسفل الظهر ، تتفاقم أثناء الليل"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb9"
+                app:layout_constraintEnd_toStartOf="@id/cb9"
+                app:layout_constraintTop_toTopOf="@id/cb9" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام الظهر ، أسفل الظهر ، تشع في الفخذ"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb10"
+                app:layout_constraintEnd_toStartOf="@id/cb10"
+                app:layout_constraintTop_toTopOf="@id/cb10" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام الظهر ، أسفل الظهر ، تشع في مؤخرة الفخذ"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb11"
+                app:layout_constraintEnd_toStartOf="@id/cb11"
+                app:layout_constraintTop_toTopOf="@id/cb11" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ألم في الصدر أثناء المجهود"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb12"
+                app:layout_constraintEnd_toStartOf="@id/cb12"
+                app:layout_constraintTop_toTopOf="@id/cb12" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ألم في الصدر ، تفاقم بسبب الإجهاد"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb13"
+                app:layout_constraintEnd_toStartOf="@id/cb13"
+                app:layout_constraintTop_toTopOf="@id/cb13" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ألم في الصدر ، يتفاقم أثناء الحركة"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb14"
+                app:layout_constraintEnd_toStartOf="@id/cb14"
+                app:layout_constraintTop_toTopOf="@id/cb14" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ألم في الصدر ، يتفاقم مع التنفس العميق أو السعال"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb15"
+                app:layout_constraintEnd_toStartOf="@id/cb15"
+                app:layout_constraintTop_toTopOf="@id/cb15" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="سعال جاف"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb16"
+                app:layout_constraintEnd_toStartOf="@id/cb16"
+                app:layout_constraintTop_toTopOf="@id/cb16" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="السعال المنتج في الصباح"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb17"
+                app:layout_constraintEnd_toStartOf="@id/cb17"
+                app:layout_constraintTop_toTopOf="@id/cb17" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الإسهال"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb18"
+                app:layout_constraintEnd_toStartOf="@id/cb18"
+                app:layout_constraintTop_toTopOf="@id/cb18" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الإسهال ، رغوي"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb19"
+                app:layout_constraintEnd_toStartOf="@id/cb19"
+                app:layout_constraintTop_toTopOf="@id/cb19" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الإسهال وخاصة في الليل"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb20"
+                app:layout_constraintEnd_toStartOf="@id/cb20"
+                app:layout_constraintTop_toTopOf="@id/cb20" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الدوخة"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb21"
+                app:layout_constraintEnd_toStartOf="@id/cb21"
+                app:layout_constraintTop_toTopOf="@id/cb21" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الدوخة ، دوران الرأس"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb22"
+                app:layout_constraintEnd_toStartOf="@id/cb22"
+                app:layout_constraintTop_toTopOf="@id/cb22" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الدوخة ، الدوار"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb23"
+                app:layout_constraintEnd_toStartOf="@id/cb23"
+                app:layout_constraintTop_toTopOf="@id/cb23" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عسر الطمث"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb24"
+                app:layout_constraintEnd_toStartOf="@id/cb24"
+                app:layout_constraintTop_toTopOf="@id/cb24" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عسر الهضم"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb25"
+                app:layout_constraintEnd_toStartOf="@id/cb25"
+                app:layout_constraintTop_toTopOf="@id/cb25" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عسر البلع"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb26"
+                app:layout_constraintEnd_toStartOf="@id/cb26"
+                app:layout_constraintTop_toTopOf="@id/cb26" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عسر البلع ، المريء"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb27"
+                app:layout_constraintEnd_toStartOf="@id/cb27"
+                app:layout_constraintTop_toTopOf="@id/cb27" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عسر البلع ، البلعوم"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb28"
+                app:layout_constraintEnd_toStartOf="@id/cb28"
+                app:layout_constraintTop_toTopOf="@id/cb28" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام الأذن"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb29"
+                app:layout_constraintEnd_toStartOf="@id/cb29"
+                app:layout_constraintTop_toTopOf="@id/cb29" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ألم العين"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb30"
+                app:layout_constraintEnd_toStartOf="@id/cb30"
+                app:layout_constraintTop_toTopOf="@id/cb30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ألم الوجه"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb31"
+                app:layout_constraintEnd_toStartOf="@id/cb31"
+                app:layout_constraintTop_toTopOf="@id/cb31" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ألم في الوجه ، أطول من بضع ساعات"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb32"
+                app:layout_constraintEnd_toStartOf="@id/cb32"
+                app:layout_constraintTop_toTopOf="@id/cb32" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام الوجه ، الجيوب الأنفية"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb33"
+                app:layout_constraintEnd_toStartOf="@id/cb33"
+                app:layout_constraintTop_toTopOf="@id/cb33" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الحمى"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb34"
+                app:layout_constraintEnd_toStartOf="@id/cb34"
+                app:layout_constraintTop_toTopOf="@id/cb34" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="التبول المتكرر"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb35"
+                app:layout_constraintEnd_toStartOf="@id/cb35"
+                app:layout_constraintTop_toTopOf="@id/cb35" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="كثرة التبول ، كميات كبيرة"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb36"
+                app:layout_constraintEnd_toStartOf="@id/cb36"
+                app:layout_constraintTop_toTopOf="@id/cb36" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الصداع"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb37"
+                app:layout_constraintEnd_toStartOf="@id/cb37"
+                app:layout_constraintTop_toTopOf="@id/cb37" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الصداع ، تفاقم بسبب زيادة التوتر"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb38"
+                app:layout_constraintEnd_toStartOf="@id/cb38"
+                app:layout_constraintTop_toTopOf="@id/cb38" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الصداع ، يتفاقم بإمالة الرأس للأمام"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb39"
+                app:layout_constraintEnd_toStartOf="@id/cb39"
+                app:layout_constraintTop_toTopOf="@id/cb39" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الصداع ، يتفاقم في الصباح"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb40"
+                app:layout_constraintEnd_toStartOf="@id/cb40"
+                app:layout_constraintTop_toTopOf="@id/cb40" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الصداع ، الجبين"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb41"
+                app:layout_constraintEnd_toStartOf="@id/cb41"
+                app:layout_constraintTop_toTopOf="@id/cb41" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ارتفاع ضغط الدم وارتفاع ضغط الدم"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb42"
+                app:layout_constraintEnd_toStartOf="@id/cb42"
+                app:layout_constraintTop_toTopOf="@id/cb42" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ارتفاع ضغط الدم ، أكثر من 180 مم زئبق"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb43"
+                app:layout_constraintEnd_toStartOf="@id/cb43"
+                app:layout_constraintTop_toTopOf="@id/cb43" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="انخفاض ضغط الدم"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb44"
+                app:layout_constraintEnd_toStartOf="@id/cb44"
+                app:layout_constraintTop_toTopOf="@id/cb44" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ضعف التركيز"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb45"
+                app:layout_constraintEnd_toStartOf="@id/cb45"
+                app:layout_constraintTop_toTopOf="@id/cb45" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ضعف البصر"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb46"
+                app:layout_constraintEnd_toStartOf="@id/cb46"
+                app:layout_constraintTop_toTopOf="@id/cb46" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="زيادة العطش"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb47"
+                app:layout_constraintEnd_toStartOf="@id/cb47"
+                app:layout_constraintTop_toTopOf="@id/cb47" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ألم المفاصل"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb48"
+                app:layout_constraintEnd_toStartOf="@id/cb48"
+                app:layout_constraintTop_toTopOf="@id/cb48" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ألم المفاصل ، يتفاقم أثناء الطقس البارد والرطوب"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb49"
+                app:layout_constraintEnd_toStartOf="@id/cb49"
+                app:layout_constraintTop_toTopOf="@id/cb49" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام المفاصل ، الكاحل"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb50"
+                app:layout_constraintEnd_toStartOf="@id/cb50"
+                app:layout_constraintTop_toTopOf="@id/cb50" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام المفاصل ، الكوع"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb51"
+                app:layout_constraintEnd_toStartOf="@id/cb51"
+                app:layout_constraintTop_toTopOf="@id/cb51" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام المفاصل ، الإبهام"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb52"
+                app:layout_constraintEnd_toStartOf="@id/cb52"
+                app:layout_constraintTop_toTopOf="@id/cb52" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام المفاصل ، الورك"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb53"
+                app:layout_constraintEnd_toStartOf="@id/cb53"
+                app:layout_constraintTop_toTopOf="@id/cb53" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام المفاصل ، الركبة"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb54"
+                app:layout_constraintEnd_toStartOf="@id/cb54"
+                app:layout_constraintTop_toTopOf="@id/cb54" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="آلام المفاصل ، الكتف"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb55"
+                app:layout_constraintEnd_toStartOf="@id/cb55"
+                app:layout_constraintTop_toTopOf="@id/cb55" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ألم المفاصل ، الكتف ، الحركات"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb56"
+                app:layout_constraintEnd_toStartOf="@id/cb56"
+                app:layout_constraintTop_toTopOf="@id/cb56" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="غثيان"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb57"
+                app:layout_constraintEnd_toStartOf="@id/cb57"
+                app:layout_constraintTop_toTopOf="@id/cb57" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="إرهاق"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb58"
+                app:layout_constraintEnd_toStartOf="@id/cb58"
+                app:layout_constraintTop_toTopOf="@id/cb58" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ألم أثناء التبول"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb59"
+                app:layout_constraintEnd_toStartOf="@id/cb59"
+                app:layout_constraintTop_toTopOf="@id/cb59" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تنمل"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb60"
+                app:layout_constraintEnd_toStartOf="@id/cb60"
+                app:layout_constraintTop_toTopOf="@id/cb60" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تنمل في القدمين"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb61"
+                app:layout_constraintEnd_toStartOf="@id/cb61"
+                app:layout_constraintTop_toTopOf="@id/cb61" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="تنمل الأطراف"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb62"
+                app:layout_constraintEnd_toStartOf="@id/cb62"
+                app:layout_constraintTop_toTopOf="@id/cb62" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="عدم انتظام دقات القلب"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb63"
+                app:layout_constraintEnd_toStartOf="@id/cb63"
+                app:layout_constraintTop_toTopOf="@id/cb63" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="سرعة التنفس"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb64"
+                app:layout_constraintEnd_toStartOf="@id/cb64"
+                app:layout_constraintTop_toTopOf="@id/cb64" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="وجع الأسنان"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb65"
+                app:layout_constraintEnd_toStartOf="@id/cb65"
+                app:layout_constraintTop_toTopOf="@id/cb65" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="وجع الأسنان بعد ملامسة الطعام البارد أو الحلو أو الساخن"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb66"
+                app:layout_constraintEnd_toStartOf="@id/cb66"
+                app:layout_constraintTop_toTopOf="@id/cb66" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="وجع الأسنان ، بعد تناول الأطعمة أو المشروبات الباردة"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb67"
+                app:layout_constraintEnd_toStartOf="@id/cb67"
+                app:layout_constraintTop_toTopOf="@id/cb67" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="سلس البول"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb68"
+                app:layout_constraintEnd_toStartOf="@id/cb68"
+                app:layout_constraintTop_toTopOf="@id/cb68" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="القيء"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/cb69"
+                app:layout_constraintEnd_toStartOf="@id/cb69"
+                app:layout_constraintTop_toTopOf="@id/cb69" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="القيء ، كل مرة بعد الوجبة"
+                android:textSize="15sp"
+                app:layout_constraintBottom_toBottomOf="@id/cb70"
+                app:layout_constraintEnd_toStartOf="@id/cb70"
+                app:layout_constraintTop_toTopOf="@id/cb70" />
+            <TextView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cb70"
+                android:id="@+id/tvvv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="20sp"
+                />
+
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+
+</LinearLayout>

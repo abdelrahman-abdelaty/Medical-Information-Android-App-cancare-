@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".knowledge"
+    android:background="@drawable/background">
+
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="396dp"
+                    android:layout_height="257dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/know" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    android:layout_marginTop="5dp"
+                    android:text="أهمية التوعيه"
+                    android:textSize="32sp"
+                    android:gravity="center"/>
+                <TextView
+
+                    android:paddingBottom="32dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="@android:color/holo_red_light"
+                    android:text="التوعية الصحيّة*
+تنوّعت الأمراض المنتشرة بين بني البشر بين الأمراض البسيطة والأمراض المزمنة، ويرتبط بعضها بسلوكيات الإنسان الخاطئة في حياته لذلك ظهرت أهميّة التثقيف الصحي للناس حول كيفيّة الوقاية من الأمراض والمحافظة على الصحة؛ فالصحة هي عبارة عن تحقيق التكامل البدني، والنفسي، والعقلي، والاجتماعي، والروحي، وبالتالي يحتاج الإنسان إلى التوعية حول كيفيّة تحقيق هذا التكامل والعيش بسعادة، لذلك تم اللجوء إلى التوعية الصحيّة. تطوّر مفهوم التوعية الصحيّة خلال السنوات الأخيرة نظراً لأهميته
+تعريف التوعية الصحيّة*
+التوعية الصحيّة: هي مجموعة الأنشطة والإجراءات التعليميّة والإعلاميّة التي تقدِّم للمواطنين المعلومات السليمة حول حمايتهم لأنفسهم وأطفالهم من الأمراض وتحذيرهم من المخاطر وبالتالي تربية أفراد المجتمع على القيم الصحيّة بالإضافة إلى الوقائيّة، فالغاية من التوعية الصحيّة تحسين الصحة على مستوى الفرد والمجتمع، ومحاولة خفض حدوث الأمراض، والإعاقات، والوفيات، وتحسين نوعية الحياة للفرد والمجتمع. تعدّ التوعية الصحيّة شكلاً من أشكال الخير الذي يجب أن يشارك به الجميع حسب قدراتهم وإمكانياتهم، ولا ينحصر ذلك على مؤسسات الإعلام والصحة.
+أهداف التوعية الصحيّة*
+نشر المفاهيم والمعارف الصحية السليمة في المجتمع، وبالتالي مساعدة الأفراد في تحديد مشاكلهم الصحية واحتياجاتهم. مساعدة الناس على حل مشاكلهم الصحيّة من خلال استخدام إمكاناتهم وبناء الاتجاهات الصحيّة السويّة، من خلال السلوك الصحي السليم، وتغيير الخاطئ إلى سلوك صحي صحيح.
+"/>
+
+
+
+            </LinearLayout>
+        </ScrollView>
+</RelativeLayout>

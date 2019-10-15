@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/nexademolight"
+        android:gravity="start"
+        android:text="C"
+        android:textColor="@color/darkred"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:fontFamily="@font/nexademolight"
+        android:gravity="start"
+        android:text="C"
+        android:textColor="@color/darkred"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/tv3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="an"
+        android:textColor="@color/darkred"
+        android:textSize="50sp"
+        app:layout_constraintEnd_toStartOf="@id/tv2"
+        app:layout_constraintStart_toEndOf="@id/tv1"
+        app:layout_constraintTop_toTopOf="@id/tv1" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="are"
+        android:textColor="@color/darkred"
+        android:textSize="50sp"
+        app:layout_constraintStart_toEndOf="@id/tv2"
+        app:layout_constraintTop_toTopOf="@id/tv2" />
+
+    <ImageView
+        android:id="@+id/heart"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/hearticon"
+        app:layout_constraintBottom_toBottomOf="@id/tv1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/tv4"
+        app:layout_constraintTop_toTopOf="@id/tv1" />
+
+
+    <ImageView
+        android:id="@+id/IV1"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/cuver1"
+        app:layout_constraintEnd_toStartOf="@id/IV2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/heart" />
+
+    <ImageView
+        android:id="@+id/activity1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/brain"
+        app:layout_constraintBottom_toBottomOf="@id/IV1"
+        app:layout_constraintEnd_toEndOf="@id/IV1"
+        app:layout_constraintStart_toStartOf="@id/IV1"
+        app:layout_constraintTop_toTopOf="@id/IV1" />
+
+    <TextView
+        android:id="@+id/arb1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/nexademobold"
+        android:text="التوعيه"
+        android:textColor="@color/splachscreenbackground"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf=" @id/IV1"
+        app:layout_constraintEnd_toEndOf="@id/activity1"
+        app:layout_constraintStart_toStartOf="@id/activity1" />
+
+    <ImageView
+        android:id="@+id/IV2"
+        android:layout_width="0dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/cuver2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/IV1"
+        app:layout_constraintTop_toBottomOf="@id/heart" />
+
+    <ImageView
+        android:id="@+id/activity2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/pain"
+        app:layout_constraintBottom_toBottomOf="@id/IV2"
+        app:layout_constraintEnd_toEndOf="@id/IV2"
+        app:layout_constraintStart_toStartOf="@id/IV2"
+        app:layout_constraintTop_toTopOf="@id/IV2" />
+
+    <TextView
+        android:id="@+id/arb2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:fontFamily="@font/nexademobold"
+        android:text="الأعراض"
+        android:textColor="@color/splachscreenbackground"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@id/IV2"
+        app:layout_constraintEnd_toEndOf="@id/activity2"
+        app:layout_constraintStart_toStartOf="@id/activity2" />
+
+
+    <ImageView
+        android:id="@+id/IV4"
+        android:layout_width="206dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/cuver3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/IV2" />
+
+    <ImageView
+        android:id="@+id/activity4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/hospitalicon"
+        app:layout_constraintBottom_toBottomOf="@id/IV4"
+        app:layout_constraintEnd_toEndOf="@id/IV4"
+        app:layout_constraintStart_toStartOf="@id/IV4"
+        app:layout_constraintTop_toTopOf="@id/IV4" />
+
+
+    <TextView
+        android:id="@+id/arb4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:fontFamily="@font/nexademobold"
+        android:text="أقرب مستشفى"
+        android:textColor="@color/splachscreenbackground"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toBottomOf="@id/IV4"
+        app:layout_constraintEnd_toEndOf="@id/activity4"
+
+        app:layout_constraintStart_toStartOf="@id/activity4" />
+
+
+</android.support.constraint.ConstraintLayout>

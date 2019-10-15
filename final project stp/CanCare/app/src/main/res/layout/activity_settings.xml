@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".Settings">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="parent"
+    android:text="@string/text_value"
+    android:textSize="32sp"
+    android:id="@+id/stv"
+    android:textColor="@color/red"
+    android:layout_marginTop="20dp"
+    android:layout_marginEnd="10dp"
+    android:layout_marginRight="10dp"
+
+    />
+
+    <RadioGroup
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/rg"
+        app:layout_constraintTop_toBottomOf="@id/stv">
+
+        <RadioButton
+android:id="@+id/rd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rd2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/rd3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+    <TextView
+
+        android:text="@string/small"
+        app:layout_constraintTop_toBottomOf="@id/stv"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="50dp"
+        android:id="@+id/small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_red_light"
+
+        android:layout_marginRight="50dp" />
+    <TextView
+        android:text="@string/medium"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintTop_toBottomOf="@id/small"
+        app:layout_constraintEnd_toEndOf="@id/small"
+        android:textSize="30sp"
+        android:layout_marginTop="15dp"
+        android:id="@+id/medium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/medium"
+        android:text="@string/large"
+        app:layout_constraintEnd_toEndOf="@id/medium"
+        android:textSize="42sp"
+        android:textColor="@android:color/holo_red_light"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</android.support.constraint.ConstraintLayout>
